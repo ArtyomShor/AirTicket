@@ -1,0 +1,22 @@
+package airticket;
+import java.util.Scanner;
+/**
+ *
+ * @author Артём
+ */
+public class AirTicket {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       TicketArray  ar= new TicketArray();
+       
+       ar.printAr();
+       ar.TicketData();    
+       //ar.tickeDataEntry();       //this is for operatopr trening on ticket № 0
+       ar.printAr();
+
+    }
+
+}
