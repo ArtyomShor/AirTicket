@@ -1,0 +1,47 @@
+package airticket;
+
+/**
+ *
+ * @author Артём
+ */
+public class AirFlight {
+
+    int day;
+    String city1;
+    String city2;
+    double price;
+
+    void print() {
+        System.out.println("Ticket info:");
+        System.out.println("day " + day);
+        System.out.println("From " + city1);
+        System.out.println("To " + city2);
+        System.out.println("Price " + price);
+    }
+
+    void setDefault() {
+        day = 0;
+        city1 = "Reference";
+        city2 = "Proydus' pechkom";
+        price = 0000.0;
+    }
+
+    AirFlight() {
+        setDefault();
+    }
+
+    AirFlight(int _day, String _city1, String _city2, double _price) {
+        day = _day; //приравнять значение класса параметру конструктора
+        city1 = _city1;
+        city2 = _city2;
+        price = _price;
+    }
+
+    void setData(int _day, String _city1, String _city2, double _price) {
+        day = _day; //приравнять значение класса параметру функции
+        city1 = _city1;
+        city2 = _city2;
+        price = _price;
+    }
+
+}
